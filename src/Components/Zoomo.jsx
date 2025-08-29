@@ -1,42 +1,47 @@
 
 import { motion, useScroll } from 'motion/react'
 import React, { useState } from 'react'
-
+import gg from "..//images/images/gg.jpeg"
+import bmw from "..//images/images/bmw.jpeg"
+import n from "..//images/images/3.avif"
+import four from "..//images/images/four.avif"
+import five from "..//images/images/five.avif"
+import six from "..//images/images/six.jpeg"
 function Zoomo() {
 
     const [image, setImage] = useState([
         {
-            url: "https://images.pexels.com/photos/17483233/pexels-photo-17483233.jpeg",
+            url: gg,
             top: "45%",
             left: "47%",
             isActive: false
         },
         {
-            url: "https://images.pexels.com/photos/29883937/pexels-photo-29883937.jpeg",
+            url: bmw,
             top: "50%",
             left: "42%",
             isActive: false
         },
         {
-            url: "https://images.unsplash.com/photo-1506610654-064fbba4780c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FyJTIwd2FsbHBhcGVyfGVufDB8fDB8fHww",
+            url: n,
             top: "40%",
             left: "50%",
             isActive: false
         },
         {
-            url: "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            url: four,
             top: "55%",
             left: "45%",
             isActive: false
         },
         {
-            url: "https://images.unsplash.com/photo-1490902931801-d6f80ca94fe4?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            url: five,
             top: "41%",
             left: "40%",
             isActive: false
         },
         {
-            url: "https://images.pexels.com/photos/31853150/pexels-photo-31853150.jpeg",
+            url: six,
             top: "65%",
             left: "53%",
             isActive: false
