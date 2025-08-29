@@ -3,8 +3,8 @@ import { motion, useScroll } from 'motion/react'
 import React, { useState } from 'react'
 
 function Zoomo() {
-    
-    const [image,setImage] = useState([
+
+    const [image, setImage] = useState([
         {
             url: "https://images.pexels.com/photos/17483233/pexels-photo-17483233.jpeg",
             top: "45%",
@@ -42,39 +42,39 @@ function Zoomo() {
             isActive: false
         }
     ]);
-    const {scrollYProgress} = useScroll();
+    const { scrollYProgress } = useScroll();
 
-    scrollYProgress.on("change",(value)=>{
-        let x = Math.floor((value*100));
-        function changeImage(arr){
-            setImage((prev)=>{
-                return prev.map((item,index)=>{
-                    return arr.indexOf(index)===-1 ? {...item,isActive:false}:{...item,isActive:true}
+    scrollYProgress.on("change", (value) => {
+        let x = Math.floor(value * 100);
+        function changeImage(arr) {
+            setImage((prev) => {
+                return prev.map((item, index) => {
+                    return arr.indexOf(index) === -1 ? { ...item, isActive: false } : { ...item, isActive: true }
                 })
             })
         }
-        
-        if(x===0){
-            changeImage([])   
+        if (x === 0) {
+            changeImage([])
         }
-        if(x===1){
-            changeImage([0])   
+        if (x === 1) {
+            changeImage([0])
         }
-        if(x===2){
-            changeImage([0,1])   
+        if (x === 2) {
+            changeImage([0, 1])
         }
-        if(x===3){
-            changeImage([0,1,2])   
+        if (x === 3) {
+            changeImage([0, 1, 2])
         }
-        if(x===4){
-            changeImage([0,1,2,3])   
+        if (x === 4) {
+            changeImage([0, 1, 2, 3])
         }
-        if(x===5){
-            changeImage([0,1,2,3,4])   
+        if (x === 5) {
+            changeImage([0, 1, 2, 3, 4])
         }
-        if(x===6){
-            changeImage([0,1,2,3,4,5])   
+        if (x === 6) {
+            changeImage([0, 1, 2, 3, 4, 5])
         }
+
     })
 
     return (

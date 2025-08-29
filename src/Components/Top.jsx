@@ -1,5 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Tops from './Tops'
+import { motion } from 'motion/react'
+import thar from "../images/videos/thar.mp4"
+import fortuner from "../images/videos/fortuner.mp4"
+import jeep from "../images/videos/jeep.mp4"
+import golf from "../images/videos/golf.mp4"
+import verna from "../images/videos/verna.mp4"
+import sn from "../images/videos/sn.mp4"
 
 function Top() {
     const data = [
@@ -24,17 +31,46 @@ function Top() {
             desc:"The Hyundai Verna is a sleek sedan combining modern design, advanced features, powerful performance, and premium comfort."
         },
         {
-            title:"Mahindra Scorpio N",
+            title:"Scorpio N",
             desc:"The Mahindra Scorpio N is a bold SUV offering rugged performance, modern features, premium comfort, and strong road presence."
         }
     ]
+    const [pos,setPos] = useState(0);
+    const mover = (val) =>{
+        return setPos(val*20);
+    }
     return (
         <div className='mt-32 relative'>
             {
                 data.map((item,index)=>{
-                    return <Tops key={index} val={item}/>
+                    return <Tops key={index} val={item} mover={mover} index={index}/>
                 })
             }
+            <div className='pointer-events-none w-full h-full absolute  top-0'>
+                <motion.div className='w-[28rem] h-[20rem]  absolute left-[30%] rounded-3xl overflow-hidden'
+                initial={{y:pos}}
+                animate={{y:pos+'rem'}}
+                >
+                    <motion.div animate={{y:-pos+'rem'}} className='w-full h-full over rounded-3xl '>
+                        <video autoPlay muted loop className='object-cover absolute w-full h-full' src={thar}></video>
+                    </motion.div>
+                    <motion.div animate={{y:-pos+'rem'}} className='w-full h-full  rounded-3xl '>
+                        <video autoPlay muted loop className='w-full h-full object-cover' src={fortuner}></video>
+                    </motion.div>
+                    <motion.div animate={{y:-pos+'rem'}} className='w-full h-full rounded-3xl '>
+                        <video autoPlay muted loop className='w-full h-full object-cover' src={jeep}></video>
+                    </motion.div>
+                    <motion.div animate={{y:-pos+'rem'}} className='w-full h-full rounded-3xl '>
+                        <video autoPlay loop muted className='w-full h-full object-cover' src={golf}></video>
+                    </motion.div>
+                    <motion.div animate={{y:-pos+'rem'}} className='w-full h-full rounded-3xl '>
+                        <video autoPlay muted loop className='w-full h-full object-cover' src={verna}></video>
+                    </motion.div>
+                    <motion.div animate={{y:-pos+'rem'}} className='w-full h-full rounded-3xl '>
+                        <video autoPlay muted loop className='w-full h-full object-cover' src={sn}></video>
+                    </motion.div>
+                </motion.div>
+            </div>
 
         </div>
     )
