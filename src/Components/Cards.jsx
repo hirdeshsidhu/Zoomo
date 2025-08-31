@@ -3,10 +3,13 @@ import Card from './Card'
 import { CarContext } from '../Utils/Context';
 import { h2 } from 'motion/react-client';
 
-function Cards({ searchCar }) {
+function Cards({ searchCar,cat,transmission }) {
     const { car } = useContext(CarContext);
     const SearchedCar = car.filter((item,index)=>{
-       return  item.title.toLowerCase().includes(searchCar.toLowerCase());
+       const itemCheck =   item.title.toLowerCase().includes(searchCar.toLowerCase());
+       const matchesCategory = cat.length > 0 ? cat.includes(item.type) : true;
+       const matchTransmission = transmission.length >0 ? transmission.includes(item.transmission):true
+       return itemCheck && matchesCategory && matchTransmission
     })
     return (
         <div className='w-full mt-10'>
