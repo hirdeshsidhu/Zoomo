@@ -3,7 +3,7 @@ import { HiBars3CenterLeft } from 'react-icons/hi2'
 import { ImCancelCircle } from 'react-icons/im';
 import Context, { CarContext } from '../Utils/Context';
 
-function FilterSection({ cat, setCat, transmission, setTransmission }) {
+function FilterSection({ cat, setCat, transmission, setTransmission,fuelType,setFuelType}) {
     const { category, transm,fuel } = useContext(CarContext)
     const [showFilters, setShowFilters] = useState(false);
     const handleClick = (item) => {
@@ -18,6 +18,14 @@ function FilterSection({ cat, setCat, transmission, setTransmission }) {
             setTransmission(transmission.filter((val) => val != item))
         } else {
             setTransmission([...transmission, item])
+        }
+    }
+
+    const handelFuel = (item)=>{
+        if (fuelType.includes(item)){
+            setFuelType(fuelType.filter((val)=>val!=item))
+        }else{
+            setFuelType([...fuelType,item])
         }
     }
     return (
@@ -58,7 +66,7 @@ function FilterSection({ cat, setCat, transmission, setTransmission }) {
                             </ul>
                         </div>
                         <div>
-                            <h3 className='text-md fonr-md mt-10'>Transmission</h3>
+                            <h3 className='text-md font-md mt-10'>Transmission</h3>
                             <ul>
                                 {
                                     transm.map((item, index) => {
@@ -72,6 +80,21 @@ function FilterSection({ cat, setCat, transmission, setTransmission }) {
                                 }
                             </ul>
                         </div>
+                        <div>
+                            <h3 className='text-md font-md mt-10'>Fuel Type</h3>
+                                <ul>
+                                    {
+                                        fuel.map((item,index)=>{
+                                            return(
+                                                <li className='flex items-center gap-2 ml-5'>
+                                                    <input type="checkbox" name="" id="" onChange={()=>handelFuel(item)} className='appearance-none w-3 h-3 border rounded-full checked:bg-blue-500 checked:border-blue-500'/>
+                                                    <label htmlFor="">{item}</label>
+                                                </li>
+                                            )
+                                        })
+                                    }
+                                </ul>
+                        </div>  
                     </div>
                 )
             }
