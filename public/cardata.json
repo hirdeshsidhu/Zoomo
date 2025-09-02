@@ -10,7 +10,8 @@
     "fuel_type": "Diesel",
     "transmission": "Automatic",
     "image": "https://i.pinimg.com/736x/c0/57/8f/c0578f495f750042080690bf8528fbfb.jpg",
-    "type": "SUV"
+    "type": "SUV",
+    "description": "A rugged and reliable SUV, ideal for long drives and rough terrains, with a spacious interior for 7 passengers."
   },
   {
     "id": 2,
@@ -23,7 +24,8 @@
     "fuel_type": "Petrol",
     "transmission": "Manual",
     "image": "https://i.pinimg.com/736x/5f/42/43/5f424348f1569ddaf343df21dbd8bc86.jpg",
-    "type": "Sedan"
+    "type": "Sedan",
+    "description": "A comfortable and fuel-efficient sedan, perfect for city driving with a smooth manual transmission."
   },
   {
     "id": 3,
@@ -36,7 +38,8 @@
     "fuel_type": "Petrol",
     "transmission": "Automatic",
     "image": "https://i.pinimg.com/1200x/5e/47/fa/5e47fa1d3d2788ae5fbd02eedf3efcdd.jpg",
-    "type": "SUV"
+    "type": "SUV",
+    "description": "A stylish and compact SUV, offering comfort, modern features, and smooth automatic handling for daily use."
   },
   {
     "id": 4,
@@ -49,7 +52,8 @@
     "fuel_type": "Diesel",
     "transmission": "Manual",
     "image": "https://i.pinimg.com/1200x/ee/d7/01/eed701bab019ca1437c7c55dd8fcd918.jpg",
-    "type": "SUV"
+    "type": "SUV",
+    "description": "A bold off-road SUV with strong performance and manual control, perfect for adventure enthusiasts."
   },
   {
     "id": 5,
@@ -62,7 +66,8 @@
     "fuel_type": "Petrol",
     "transmission": "Manual",
     "image": "https://i.pinimg.com/736x/2b/30/f7/2b30f774433c9aaf3d9f861ac5ece2fa.jpg",
-    "type": "Hatchback"
+    "type": "Hatchback",
+    "description": "A compact hatchback, ideal for city commutes, offering good mileage and easy maneuverability."
   },
   {
     "id": 6,
@@ -75,7 +80,8 @@
     "fuel_type": "Petrol",
     "transmission": "Automatic",
     "image": "https://i.pinimg.com/736x/73/2b/63/732b6340701c0cfca374ea18feecb351.jpg",
-    "type": "SUV"
+    "type": "SUV",
+    "description": "A modern and stylish SUV, packed with features and smooth automatic transmission for comfortable drives."
   },
   {
     "id": 7,
@@ -88,7 +94,8 @@
     "fuel_type": "Petrol",
     "transmission": "Automatic",
     "image": "https://i.pinimg.com/736x/46/35/29/463529ab9382c4588b90619f051ccba7.jpg",
-    "type": "Sedan"
+    "type": "Sedan",
+    "description": "A premium sedan offering elegance, comfort, and a smooth automatic driving experience for long commutes."
   },
   {
     "id": 8,
@@ -101,7 +108,8 @@
     "fuel_type": "Diesel",
     "transmission": "Manual",
     "image": "https://i.pinimg.com/1200x/f2/0e/c5/f20ec50c01e9c0b12964b68fcffc27ac.jpg",
-    "type": "SUV"
+    "type": "SUV",
+    "description": "A compact SUV built for versatility, combining rugged performance with practical space for passengers."
   },
   {
     "id": 9,
@@ -114,7 +122,8 @@
     "fuel_type": "Diesel",
     "transmission": "Automatic",
     "image": "https://i.pinimg.com/1200x/f0/3f/6e/f03f6eceacae6cc3acb10de45e0eaa65.jpg",
-    "type": "SUV"
+    "type": "SUV",
+    "description": "A stylish SUV with a strong road presence, offering comfort, modern features, and efficient automatic driving."
   },
   {
     "id": 10,
@@ -127,7 +136,8 @@
     "fuel_type": "Diesel",
     "transmission": "Automatic",
     "image": "https://i.pinimg.com/1200x/a9/a7/6c/a9a76c82bbeb1e08280c35e68175a473.jpg",
-    "type": "SUV"
+    "type": "SUV",
+    "description": "A full-sized SUV designed for adventure and family trips, offering powerful performance and a spacious cabin."
   },
   {
     "id": 11,
@@ -140,7 +150,8 @@
     "fuel_type": "Diesel",
     "transmission": "Automatic",
     "image": "https://i.pinimg.com/1200x/0b/ff/54/0bff543c6ae3ac427fe036b793c1c6eb.jpg",
-    "type": "Luxury SUV"
+    "type": "Luxury SUV",
+    "description": "A luxury SUV that combines elegance, comfort, and advanced technology for a premium driving experience."
   },
   {
     "id": 12,
@@ -153,7 +164,8 @@
     "fuel_type": "Diesel",
     "transmission": "Automatic",
     "image": "https://i.pinimg.com/736x/76/01/b3/7601b3b5a4414688be8c1d1b0efb8998.jpg",
-    "type": "Luxury SUV"
+    "type": "Luxury SUV",
+    "description": "A premium SUV with sporty performance and advanced features, perfect for a luxurious yet dynamic ride."
   },
   {
     "id": 13,
@@ -166,7 +178,8 @@
     "fuel_type": "Diesel",
     "transmission": "Automatic",
     "image": "https://i.pinimg.com/1200x/7e/cf/83/7ecf83a1a2289315178f5a91f06da99e.jpg",
-    "type": "Luxury SUV"
+    "type": "Luxury SUV",
+    "description": "A sophisticated and spacious luxury SUV, offering high-end features and comfort for family and city driving."
   },
   {
     "id": 14,
@@ -179,7 +192,8 @@
     "fuel_type": "Petrol",
     "transmission": "Automatic",
     "image": "https://i.pinimg.com/1200x/75/f7/ad/75f7ad6172639fe1deb4be603aa702c9.jpg",
-    "type": "Luxury SUV"
+    "type": "Luxury SUV",
+    "description": "A stylish luxury SUV combining performance, elegance, and advanced technology for an exhilarating ride."
   },
   {
     "id": 15,
@@ -192,7 +206,8 @@
     "fuel_type": "Diesel",
     "transmission": "Automatic",
     "image": "https://i.pinimg.com/1200x/22/6c/3a/226c3a94e6dc46fc1d76eb14ee11895c.jpg",
-    "type": "Luxury SUV"
+    "type": "Luxury SUV",
+    "description": "A premium SUV built for off-road adventure and family comfort, with powerful performance and luxurious interiors."
   },
   {
     "id": 16,
@@ -205,7 +220,8 @@
     "fuel_type": "Diesel",
     "transmission": "Manual",
     "image": "https://i.pinimg.com/736x/5e/90/29/5e902973b2936b6edb020a3ce0adb57a.jpg",
-    "type": "Sedan"
+    "type": "Sedan",
+    "description": "A reliable and comfortable sedan, offering smooth manual driving and good fuel efficiency."
   },
   {
     "id": 17,
@@ -218,7 +234,8 @@
     "fuel_type": "Petrol",
     "transmission": "Automatic",
     "image": "https://i.pinimg.com/1200x/50/93/13/509313edb72beeb45997f16ce7a6381b.jpg",
-    "type": "SUV"
+    "type": "SUV",
+    "description": "A versatile SUV with modern design and features, offering a smooth and comfortable automatic drive."
   },
   {
     "id": 18,
@@ -231,7 +248,8 @@
     "fuel_type": "Diesel",
     "transmission": "Automatic",
     "image": "https://i.pinimg.com/1200x/1c/b3/f3/1cb3f309c5d87cedb820188b61fdae24.jpg",
-    "type": "Luxury SUV"
+    "type": "Luxury SUV",
+    "description": "A safe and luxurious SUV, combining advanced safety features with comfort and modern technology."
   },
   {
     "id": 19,
@@ -244,7 +262,8 @@
     "fuel_type": "Petrol",
     "transmission": "Manual",
     "image": "https://i.pinimg.com/736x/fc/f9/7c/fcf97c2f816c088ea3dad13242e41260.jpg",
-    "type": "Compact SUV"
+    "type": "Compact SUV",
+    "description": "A compact SUV designed for city use, offering efficient performance and easy handling with a manual gearbox."
   },
   {
     "id": 20,
@@ -257,6 +276,7 @@
     "fuel_type": "Petrol",
     "transmission": "Automatic",
     "image": "https://i.pinimg.com/736x/45/bb/9f/45bb9fcca58eea50d5cd671e2281b208.jpg",
-    "type": "Luxury SUV"
+    "type": "Luxury SUV",
+    "description": "A full-sized luxury SUV with extravagant design, spacious seating for 7, and top-notch performance."
   }
 ]

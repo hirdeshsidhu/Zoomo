@@ -15,6 +15,7 @@ function App() {
     return (
         <div className='w-full h-screen bg-[#0D0D0D] text-white font-["satoshi"]'>
             <div>
+                
                 <Navbar />
                 <Routes>
                     <Route path='/' element={<Home />}></Route>
