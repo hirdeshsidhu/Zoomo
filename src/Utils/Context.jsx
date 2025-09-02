@@ -18,12 +18,17 @@ function Context({ children }) {
     const category = [...new Set(car.map((item) => item.type))]
     const transm = [...new Set(car.map((item,index)=>item.transmission))]
     const fuel = [...new Set(car.map((item)=>item.fuel_type))]
+    const prices = car.map(item=>item.price);
+    const minPrice = prices.length>0 ? Math.min(...prices):0;
+    const maxPrice = prices.length>0 ? Math.max(...prices):0;
     const data = {
         car,
         setCar,
         category,
         transm,
-        fuel
+        fuel,
+        minPrice,
+        maxPrice
     }
     return (
         <div>

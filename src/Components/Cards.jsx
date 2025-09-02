@@ -3,17 +3,18 @@ import Card from './Card'
 import { CarContext } from '../Utils/Context';
 import { h2 } from 'motion/react-client';
 
-function Cards({ searchCar,cat,transmission,fuelType }) {
+function Cards({ searchCar,cat,transmission,fuelType,selectedPrice }) {
     const { car } = useContext(CarContext);
     const SearchedCar = car.filter((item,index)=>{
        const itemCheck =   item.title.toLowerCase().includes(searchCar.toLowerCase());
        const matchesCategory = cat.length > 0 ? cat.includes(item.type) : true;
        const matchTransmission = transmission.length >0 ? transmission.includes(item.transmission):true
        const fuel_Type = fuelType.length>0 ? fuelType.includes(item.fuel_type) : true;
-       return itemCheck && matchesCategory && matchTransmission && fuel_Type
+       const itemPrice = selectedPrice ? item.price<=selectedPrice: true
+       return itemCheck && matchesCategory && matchTransmission && fuel_Type && itemPrice
     })
     return (
-        <div className='w-full mt-10'>
+        <div className='w-full mt-10 min-h-screen'>
             <div className=' mx-auto'>
                 <div className="flex flex-wrap justify-center gap-6">
                    {
