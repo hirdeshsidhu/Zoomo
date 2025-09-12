@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import Card from './Card'
 import { CarContext } from '../Utils/Context';
-import { h2 } from 'motion/react-client';
+
 
 function Cards({ searchCar,cat,transmission,fuelType,selectedPrice }) {
     const { car } = useContext(CarContext);

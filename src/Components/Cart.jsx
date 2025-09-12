@@ -29,7 +29,7 @@ function Cart() {
                             <div key={index} className='flex items-center border-b-[1px] border-zinc-600'>
                                 <div className='w-2/4 flex items-center gap-2'>
                                     <div className='w-[100px] my-2'>
-                                        <img src={item.image} alt={item.title} />
+                                        <img src={item.image} alt={item.title} className='rounded-lg' />
                                     </div>
                                     <div>
                                         <h4 className='font-semibold'>{item.title}</h4>
@@ -51,7 +51,7 @@ function Cart() {
                         ))}
 
                         <div className='flex justify-between mt-10'>
-                            <button className='px-2 py-1 rounded-3xl cursor-pointer text-sm bg-white text-black ' onClick={()=>clearCart()}>Clear All</button>
+                            <button className='px-3 py-2 cursor-pointer bg-white rounded-full text-black w-40 border-[1px] border-black text-sm active:scale-95 hover:bg-red-500 hover:text-black transition-all duration-500' onClick={()=>clearCart()}>Clear All</button>
                             <div className="text-right  mt-6">
                                 <h2 className="text-2xl font-bold">Subtotal : <span className='text-red-500'>Rs.{subtotal}</span></h2>
                             </div>
