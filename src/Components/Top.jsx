@@ -49,6 +49,7 @@ function Top() {
             <div className='pointer-events-none w-full h-full absolute  top-0'>
                 <motion.div className='w-[28rem] h-[20rem]  absolute left-[30%] rounded-3xl overflow-hidden'
                 initial={{y:pos}}
+                transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }}
                 animate={{y:pos+'rem'}}
                 >
                     <motion.div animate={{y:-pos+'rem'}} className='w-full h-full over rounded-3xl '>
