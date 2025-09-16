@@ -52,22 +52,22 @@ function Top() {
                 transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }}
                 animate={{y:pos+'rem'}}
                 >
-                    <motion.div animate={{y:-pos+'rem'}} className='w-full h-full over rounded-3xl '>
+                    <motion.div animate={{y:-pos+'rem'}} transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }} className='w-full h-full over rounded-3xl '>
                         <video autoPlay muted loop className='object-cover absolute w-full h-full' src={thar}></video>
                     </motion.div>
-                    <motion.div animate={{y:-pos+'rem'}} className='w-full h-full  rounded-3xl '>
+                    <motion.div animate={{y:-pos+'rem'}} transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }} className='w-full h-full  rounded-3xl '>
                         <video autoPlay muted loop className='w-full h-full object-cover' src={fortuner}></video>
                     </motion.div>
-                    <motion.div animate={{y:-pos+'rem'}} className='w-full h-full rounded-3xl '>
+                    <motion.div animate={{y:-pos+'rem'}} transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }} className='w-full h-full rounded-3xl '>
                         <video autoPlay muted loop className='w-full h-full object-cover' src={jeep}></video>
                     </motion.div>
-                    <motion.div animate={{y:-pos+'rem'}} className='w-full h-full rounded-3xl '>
+                    <motion.div animate={{y:-pos+'rem'}} transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }} className='w-full h-full rounded-3xl '>
                         <video autoPlay loop muted className='w-full h-full object-cover' src={golf}></video>
                     </motion.div>
-                    <motion.div animate={{y:-pos+'rem'}} className='w-full h-full rounded-3xl '>
+                    <motion.div animate={{y:-pos+'rem'}} transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }} className='w-full h-full rounded-3xl '>
                         <video autoPlay muted loop className='w-full h-full object-cover' src={verna}></video>
                     </motion.div>
-                    <motion.div animate={{y:-pos+'rem'}} className='w-full h-full rounded-3xl '>
+                    <motion.div animate={{y:-pos+'rem'}} transition={{ ease: [0.76, 0, 0.24, 1], duration: 0.6 }} className='w-full h-full rounded-3xl '>
                         <video autoPlay muted loop className='w-full h-full object-cover' src={sn}></video>
                     </motion.div>
                 </motion.div>
